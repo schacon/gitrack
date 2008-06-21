@@ -8,7 +8,7 @@ class GitRack
   end
   
   def git_files_list
-    SimpleGit.new('.git').log
+    SimpleGit.new('.git').log('master', 2)
   end
 end
 
